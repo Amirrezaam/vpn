@@ -1,0 +1,55 @@
+.admin_panel_box {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    padding-top: 0;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.admin_panel_box .admin_panel_box_body h3 {
+   text-align: center;
+}
+
+.admin_panel_box .admin_panel_box_body {
+    margin-top: 1rem;
+}
+
+.admin_panel_box .admin_panel_box_footer {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.admin_panel_box .admin_panel_box_footer button {
+    font-size: 24px;
+    background-color: rgba(156, 8, 208, 1);
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: .5rem 0;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .admin_panel_box {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .admin_panel_box {
+        margin: .25rem 1rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .admin_panel_box {
+        margin: .25rem 0;
+    }
+}

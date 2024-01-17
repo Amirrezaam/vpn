@@ -1,0 +1,42 @@
+.content {
+    margin-top: 4rem;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content h4 {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.account_shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .account_shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .account_box {
+        margin-top: .5rem;
+    }
+
+    .content h4 {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .account_shop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
