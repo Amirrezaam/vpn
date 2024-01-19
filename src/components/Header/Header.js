@@ -55,7 +55,7 @@ export default function Header() {
                 <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div className={styles.logo}>
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
             </div>
         </header>
     )

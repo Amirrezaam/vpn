@@ -10,9 +10,9 @@ export default function AdminPanel1() {
             <div className={styles.content}>
                 <h1>پیشخوان</h1>
                 <div className={styles.admin_panel}>
-                    <AdminDashboardBox />
-                    <AdminDashboardBox />
-                    <AdminDashboardBox />
+                    <AdminDashboardBox title="دسته بندی vpn ها" />
+                    <AdminDashboardBox title="2دسته بندی vpn ها" />
+                    <AdminDashboardBox title="3دسته بندی vpn ها" />
                 </div>
             </div>
             <Footer />

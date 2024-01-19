@@ -1,19 +1,17 @@
 import styles from './AccountBox.module.css'
 
-export default function AccountBox() {
+export default function AccountBox({name, price, attributes}) {
     return (
         <div className={styles.account_box}>
             <div className={styles.account_box_body}>
                 <div className={styles.header}>
-                    <h5>اکانت 6 ماهه</h5>
+                    <h5>{name}</h5>
                 </div>
-                <span>200 هزار تومان</span>
+                <span>{price}</span>
                 <ul>
-                    <li>اتصال دو کاربر</li>
-                    <li>پرداخت آنلاین</li>
-                    <li>تحویل آنی</li>
-                    <li>سرعت نامحدود</li>
-                    <li>قابل استفاده در ویندوز آیفون اندروید و مک</li>
+                    {
+                        attributes.map(item => <li>{item}</li>)
+                    }
                 </ul>
             </div>
             <div className={styles.account_box_footer}>

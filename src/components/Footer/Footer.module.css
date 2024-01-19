@@ -19,7 +19,8 @@
 }
 
 .footer_menu .right p{
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     font-size: 24px;
 }
 
@@ -27,6 +28,11 @@
     margin-right: 2.5rem;
     font-size: 24px;
 }
+
+.footer_menu .right ul li a{
+    color: #000;
+}
+
 
 .footer_menu .right ul:first-child{
     margin-right: 0;

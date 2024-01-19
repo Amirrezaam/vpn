@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import img from '../../assets/images/image3.png'
 import styles from "./Footer.module.css"
 
@@ -11,9 +12,15 @@ export default function Footer() {
                     <ul>
                         <img src={img} alt="" />
                         <li style={{ color: "purple" }}>لینک های کاربردی</li>
-                        <li>صفحه اصلی</li>
-                        <li>طرح ها</li>
-                        <li>درباره ما</li>
+                        <li>
+                            <Link to="/">صفحه اصلی</Link>
+                        </li>
+                        <li>
+                            <Link to="/shop">طرح ها</Link>
+                        </li>
+                        <li>
+                            <Link to="/about-us">درباره ما</Link>
+                        </li>
                     </ul>
                 </div>
 
